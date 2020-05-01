@@ -1,10 +1,11 @@
-# Atom & Git
+# Git in a Jiff
+
 ## Simple-Site
 
-<small><a href="http://moacir.com">Moacir P. de Sá Pereira</a> / <a href="http://twitter.com/muziejus">@muziejus</a><br />
-Research Data Librarian | <a href="http://library.columbia.edu">Columbia University Libraries</a><br />
-moacir.p@columbia.edu<br />
-NY, NY, 7 February 2019</small>
+<a href="http://moacir.com">Moacir P. de Sá Pereira</a> | <a href="http://twitter.com/muziejus">@muziejus</a><br />
+Research Data Librarian | <a href="http://library.columbia.edu">Columbia University Libraries</a> <br />
+moacir.p@columbia.edu | <a href="http://pronoun.is/he">pronoun.is/he</a><br />
+<a href="https://twitter.com/hashtag/nycdhweek?src=hash">#nycdhweek</a> New York, NY, 5 February 2020
 
 Note: Thanks all for coming, and let’s get started on today’s workshop. First
 thing’s first, I want you all to open up this presentation on your computers.
@@ -12,7 +13,7 @@ It will make things much, much easier. Head on over to
 
 ---
 
-## [talks.moacir.com/atom-and-git](http://talks.moacir.com/atom-and-git)
+## [talks.moacir.com/git-in-a-jiff-2020](http://talks.moacir.com/git-in-a-jiff-2020)
 
 Note: This will let you follow along with me, which will come in handy when
 you have to click on links and copy paste things.
@@ -25,18 +26,16 @@ you have to click on links and copy paste things.
 <div class="col-6">
 <h3><i class="fab fa-apple"></i> MacOS</h3>
 <ol>
-<li>Atom (<a href="http://atom.io">atom.io</a>)</li>
-<li>Git (installed via Atom)</li>
-<li>GitHub Desktop (<a href="https://desktop.github.com/">GitHub Desktop</a>)</li>
+<li>VS Code (<a href="https://code.visualstudio.com/docs/">code.visualstudio.com</a>)</li>
+<li>Git (installed via OSX)</li>
 </ol>
 </div>
 
 <div class="col-6">
 <h3><i class="fab fa-windows"></i> Windows</h3>
 <ol>
-<li>Atom (<a href="http://atom.io">atom.io</a>)</li>
+<li>VS Code (<a href="https://code.visualstudio.com/docs/">code.visualstudio.com</a>)</li>
 <li>Git (<a href="http://gitforwindows.org">gitforwindows.org</a>)</li>
-<li>GitHub Desktop (<a href="https://desktop.github.com/">GitHub Desktop</a>)</li>
 </ol>
 </div>
 
@@ -44,13 +43,13 @@ Note: While these are all downloading, I’ll describe a bit...
 
 ---
 
-## While All That’s Downloading, Why Atom?
+## While All That’s Downloading, Why VS Code?
 
 <ol>
 <li class="fragment">Free</li>
 <li class="fragment">Similar across platforms</li>
 <li class="fragment">One-stop shop with integrated shell</li>
-<li class="fragment">Excellent Git/GitHub support built in</li>
+<li class="fragment">Excellent Git support built in</li>
 </ol>
 
 ---
@@ -147,12 +146,11 @@ parts of your CV.
 
 ---
 
-## Back to Atom
+## Back to VS Code
 
-1. Install Atom plugins: [github.com/plain-plain-text/atom-config/](http://github.com/plain-plain-text/atom-config)
-1. Clone your own, forked `simple-site` repository from GitHub via Atom’s
+1. Enable autosave.
+1. Clone your own, forked `simple-site` repository from GitHub via VS Code’s
    Command Palette (cmd-shift-p or ctrl-shift-p).
-1. Link Atom to GitHub via the GitHub panel in Atom.
 
 Note: Atom is brought to us by the people at GitHub. It probably won’t win you
 any cool kid awards amongst your hacker nerd friends, but it’s an easy editor
@@ -160,7 +158,7 @@ to learn, I think, and its Git integration is tip-top.
 
 ---
 
-![Screenshot of Atom](https://i.imgur.com/l9OTjBn.png)
+![Screenshot of VS Code](https://i.imgur.com/OloEamf.png)
 
 ---
 
@@ -180,7 +178,7 @@ to learn, I think, and its Git integration is tip-top.
 
 ---
 
-![Screenshot of Markdown in action](https://i.imgur.com/KDmpwYM.png)
+![Screenshot of Markdown in action](https://i.imgur.com/a7dMtNu.png)
 
 ---
 
