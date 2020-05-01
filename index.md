@@ -1,11 +1,11 @@
 # Git in a Jiff
 
-## Simple-Site
+## (Black Sea in History Version)
 
 <a href="http://moacir.com">Moacir P. de Sá Pereira</a> | <a href="http://twitter.com/muziejus">@muziejus</a><br />
 Research Data Librarian | <a href="http://library.columbia.edu">Columbia University Libraries</a> <br />
 moacir.p@columbia.edu | <a href="http://pronoun.is/he">pronoun.is/he</a><br />
-<a href="https://twitter.com/hashtag/nycdhweek?src=hash">#nycdhweek</a> New York, NY, 5 February 2020
+New York, NY, 1 May 2020
 
 Note: Thanks all for coming, and let’s get started on today’s workshop. First
 thing’s first, I want you all to open up this presentation on your computers.
@@ -13,37 +13,23 @@ It will make things much, much easier. Head on over to
 
 ---
 
-## [talks.moacir.com/git-in-a-jiff-2020](http://talks.moacir.com/git-in-a-jiff-2020)
+## [talks.moacir.com/black-sea-git-in-a-jiff](http://talks.moacir.com/black-sea-git-in-a-jiff)
 
 Note: This will let you follow along with me, which will come in handy when
 you have to click on links and copy paste things.
 
 ---
 
-## Software to Get
+## Outline
 
-<div class="row">
-<div class="col-6">
-<h3><i class="fab fa-apple"></i> MacOS</h3>
-<ol>
-<li>VS Code (<a href="https://code.visualstudio.com/docs/">code.visualstudio.com</a>)</li>
-<li>Git (installed via OSX)</li>
-</ol>
-</div>
-
-<div class="col-6">
-<h3><i class="fab fa-windows"></i> Windows</h3>
-<ol>
-<li>VS Code (<a href="https://code.visualstudio.com/docs/">code.visualstudio.com</a>)</li>
-<li>Git (<a href="http://gitforwindows.org">gitforwindows.org</a>)</li>
-</ol>
-</div>
-
-Note: While these are all downloading, I’ll describe a bit...
+1. VS Code
+2. Git
+3. GitHub
+4. Jekyll
 
 ---
 
-## While All That’s Downloading, Why VS Code?
+## Why VS Code?
 
 <ol>
 <li class="fragment">Free</li>
@@ -63,12 +49,15 @@ Note: While these are all downloading, I’ll describe a bit...
 
 ---
 
-## OK, but *Git*?
+## Windows Users Please Install Git:
 
-<ol>
-<li class="fragment">Not Git. Please not Git.</li>
-</ol>
+[https://git-scm.com/download/win](https://git-scm.com/download/win)
 
+* Choose 64-bit.
+* Start the install.
+* The defaults are fine, but be sure to choose “Git from the command line and
+also from 3rd-party software” and to choose “Checkout Windows-style, commit
+Unix-style” (they should be default values)
 
 ---
 
@@ -137,52 +126,83 @@ parts of your CV.
 
 ---
 
-## Working with Git via GitHub <i class="fab fa-github"></i> and Simple-Site
-
-1. Create an account at [github.com](http://github.com)
-1. Fork the [`simple-site`
-   repository](http://github.com/plain-plain-text/simple-site) (or “project.”)
-1. Enable GitHub pages on the new repository
-
----
-
-## Back to VS Code
+## Back to VS Code & GitHub
 
 1. Enable autosave.
-1. Clone your own, forked `simple-site` repository from GitHub via VS Code’s
+1. Clone the [`black-sea-in-history`](https://github.com/black-sea-in-history/black-sea-in-history) repository from GitHub via VS Code’s
    Command Palette (cmd-shift-p or ctrl-shift-p).
 
-Note: Atom is brought to us by the people at GitHub. It probably won’t win you
-any cool kid awards amongst your hacker nerd friends, but it’s an easy editor
-to learn, I think, and its Git integration is tip-top.
+---
+
+![Screenshot of VS Code](https://i.imgur.com/8mUW5Hd.png)
 
 ---
 
-![Screenshot of VS Code](https://i.imgur.com/OloEamf.png)
+## Key Files in _The Black Sea in History_
 
----
-
-## Key Files in Simple-Site
-
-* 📁 `_posts` (Where posts go, as Markdown files)
-    * `YYYY-MM-DD-some-title.md` (For example)
-* `_config.yml` (Configurations in [YAML](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/)) 
-* `index.md` (Front page, as a Markdown file)
+* 📁 `_chapters` (for different chapters)
+* 📁 `_cities` (for different city pages written in markdown)
+* 📁 `_contributors` (for different contributor pages written in markdown)
 * `about.md` (About page, as a Markdown file)
+* `bibliography.md` (Bibliography page, as a Markdown file)
+* `chronology.md` (Chronology page, as a Markdown file)
+* `maps.md` (Maps page, as a Markdown file)
 
 ---
 
 ## Markdown?
 
-* Yes, a [Markdown](https://guides.github.com/features/mastering-markdown/)
+* Yes, [Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ---
 
-![Screenshot of Markdown in action](https://i.imgur.com/a7dMtNu.png)
+## Jekyll and Ruby
+
+* [Jekyll](http://jekyllrb.com) is a Ruby-based static-site generator
+* It can create pages that are hosted on GitHub for free
+* It removes a lot of the maintenance in keeping sites active
 
 ---
 
-## Create a New Post
+## Install Remaining Dependencies
+
+1. Install the bundler gem
+1. Use bundler to install jekyll
+1. Install volta, node, and yarn
+1. Use yarn to install the javascript libraries
+
+---
+
+## Install Remaining Dependencies
+
+In the terminal in vscode:
+
+1. `gem install bundler`
+1. `bundle install`
+1. `curl https://get.volta.sh | bash` (close and reopen terminal, then:)
+   `volta install node` and `volta install yarn`
+1. `yarn install`
+
+---
+
+## Fire up Jekyll
+
+`jekyll s` in the terminal in vscode
+
+---
+
+## Create your Contributor page
+
+`_contributors/moacir.md`:
+
+```markdown
+---
+name: Moacir P. de Sá Pereira
+---
+
+Moacir works at 
+[Columbia University Libraries](http://library.columbia.edu).
+```
 
 ---
 
@@ -192,13 +212,6 @@ to learn, I think, and its Git integration is tip-top.
 
 ---
 
-## OK, but Git
-
-<ol>
-<li class="fragment">Branching</li>
-<li class="fragment">Issue Tracking via GitHub and Closing via Commit (“closes #n”)</li>
-<li class="fragment"><a href="http://ohshitgit.com">Messing Up</a></li>
-</ol>
 
 ---
 
