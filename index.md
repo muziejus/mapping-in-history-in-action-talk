@@ -1,4 +1,4 @@
-# Data Management (and More) <!-- .element: class="r-fit-text" -->
+# Research Data Management: Plans and More <!-- .element: class="r-fit-text" -->
 
 <small>
 <a href="http://moacir.com">Moacir P. de Sá Pereira</a> | <a href="http://twitter.com/muziejus">@muziejus</a><br />
@@ -10,6 +10,10 @@ New York, NY, 29 October 2020
 Note: Thanks all for coming, and let’s get started on today’s workshop. First
 thing’s first, I want you all to open up this presentation on your computers.
 It will make things much, much easier. Head on over to 
+
+---
+
+http://talks.moacir.com/research-data-management-plans-and-more/
 
 ---
 
@@ -58,12 +62,28 @@ It will make things much, much easier. Head on over to
 
 ---
 
+## “Recorded Factual Material” <!-- .element: class="r-fit-text" -->
+
+* Data are never recorded. They are captured. Taken.
+* Data serve interests, including your own.
+* Data are never “raw” but always “cooked.” 
+* Data about people are simplified representations, not replacements.
+
+---
+
+
 ## Projects Are Processes
 
 * Things change <!-- .element: class="fragment" -->
 * Handling and anticipating change is management <!-- .element: class="fragment" -->
 * Research often involves data <!-- .element: class="fragment" -->
 * Hence, data management <!-- .element: class="fragment" -->
+
+---
+
+## The Research Data Lifecycle
+
+![Research Data Lifecycle](https://i.imgur.com/HGroCEH.png)<!-- .element: style="width: 40%" -->
 
 ---
 
@@ -95,7 +115,8 @@ Backups will rarely, if ever, be done.
 ## Managed Data Are the Rules
 
 * 2011: NSF, NOAA, and NEH require DMPs
-* 2012: NIH joins
+* 2012: NIH joins (new policy [drops
+  tomorrow](https://www.federalregister.gov/public-inspection/2020-23674/final-policy-for-data-management-and-sharing-and-supplemental-information)!)
 * 2014: DOE
 * 2015: NASA
 
@@ -112,6 +133,15 @@ Backups will rarely, if ever, be done.
 
 ---
 
+## And a Few Free Answers:
+
+* Document everything and build codebooks
+* Establish a consistent file naming and organizing scheme
+* Provide for automated backups
+* Plan ahead for analysis, sharing, publishing, and archiving
+
+---
+
 ## Writing a DMP
 
 * Consult with
@@ -121,35 +151,70 @@ Backups will rarely, if ever, be done.
 
 ---
 
-you’ve got the money now...
+## 🎉 You Got the Grant 😎  Now What?
 
 ---
 
-labarchives
+![LabArchives](https://i.imgur.com/66j8vxc.png)
+
+* Electronic lab notebook
+* Free for Columbia users
+* Secure even for HIPAA
+* Can help manage entire project / lab
 
 ---
 
-git
+![Git](https://i.imgur.com/r7Bd7VP.png) <!-- .element: style="width: 50%" -->
+
+* Version control software
+* Completely free
+* Can be extended for use in data & project management
 
 ---
 
-analysis and visualization?
+## More than Management
+
+Consult with RDS for help with analysis and visualization, specifically but
+not limited to:
+
+* [R](http://r-project.org) and [Tidyverse](https://tidyverse.org)
+* Python and [Pandas](https://pandas.pydata.org/)
+* JavaScript and [D3](http://d3js.org)
+* GIS and other geospatial analysis
 
 ---
 
-once your’e done... sharing
+## And Then Share
+
+Consult with [Digital
+Scholarship](https://library.columbia.edu/services/digital-scholarship.html)
+about publishing, sharing, depositing, and archiving your data pursuant to
+your data management needs such as:
+
+* [Academic Commons](https://academiccommons.columbia.edu/) for publications
+  and datasets
+* [Dryad](http://datadryad.org) for curated datasets
 
 ---
 
-ac
+## How Do We Improve This? <!-- .element: class="r-fit-text" -->
+
+<blockquote class="r-fit-text">
+<p>I will store all data on at least one, and possibly up to 50, hard drives
+in my lab. The directory structure will be custom, not self-explanatory, and
+in no way documented or described. Students working with the data will be
+encouraged to make their own copies and modify them as they please, in order
+to ensure that no one can ever figure out what the actual real raw data
+is.</p>
+
+Backups will rarely, if ever, be done.
+</blockquote>
+
+--> [Brown 2010](http://ivory.idyll.org/blog/data-management.html)
 
 ---
 
-dryad
-
----
-
-# Questions?
+## Questions?
 
 ---
 
