@@ -1,4 +1,10 @@
-**
+# Blacklist everything
+/*
+
+# Whitelist some root files
+!.gitignore
 !index.html
 !index.md
 !app.js
+!dist/
+
