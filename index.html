@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Black Sea Git in a Jiff</title>
-    <meta name="description" content="A workshop on Git and VS Code">
+    <title>Data Management (and More)</title>
+    <meta name="description" content="A workshop on data management">
     <meta name="author" content="Moacir P. de Sá Pereira">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,41 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
-    <link rel="stylesheet" href="https://muziejus.github.io/columbia-assets/dist/columbiaReveal.css">
-    <link href="./app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+    <link rel="stylesheet" href="dist/theme/columbia.css" id="theme">
+    <!-- <link rel="stylesheet" href="https://muziejus.github.io/columbia-assets/dist/columbiaReveal.css"> -->
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="https://muziejus.github.io/columbia-assets/css/reveal/syntax.css" id="theme">
-
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://muziejus.github.io/columbia-assets/css/reveal/syntax.css" id="highlight-theme">
   </head>
 
-  <body class="bg-washedBlue-500">
-    <header class="flex">
-      <div class="text-right w-full p-2 font-serif text-base text-columbiaBlue-500">
-        @muziejus
-      </div>
-    </header>
-    <footer class="flex items-end">
-      <div class="w-3/4 md:w-1/2">
+  <body>
+    <div class="header-footer">
+      <header>
+        <div class="twitter-slug">
+          @muziejus
+        </div>
+      </header>
+      <footer>
         <img src="https://i.imgur.com/e1naJ2V.png" alt="Columbia University Libraries">
-      </div>
-    </footer>
-
-    <div class="reveal font-serif text-columbiaBlue-200 text-base font-normal">
+      </footer>
+    </div>
+    <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section data-markdown="index.md"
@@ -55,16 +40,20 @@
         </section>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script> -->
-    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/notes/notes.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/highlight.min.js"></script>
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // embedded: true,
+        hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+        /*
         markdown: {
           gfm: true
         },
@@ -80,17 +69,13 @@
         transition: 'slide', // none/fade/slide/convex/concave/zoom
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-//          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'http://talks.moacir.com/reveal.js/plugin/notes/notes.js', async: true },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
           { src: './app.js', async: true }
         ]
+        */
       });
     </script>
+    <script src="./app.js"></script>
 
   </body>
 </html>
