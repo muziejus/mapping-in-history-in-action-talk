@@ -42,7 +42,8 @@ http://talks.moacir.com/mapping-in-history-in-action/
 
 * Alex Gil, Digital Scholarship Librarian
 * Eric Glass, GIS/Metadata Librarian
-* Me, Research Data Librarian
+* Me, Research Data Librarian ([Dec. 3 Data
+  Workshop](https://library.columbia.edu/about/events/event.html?guid=CAL-00bb9e28-7578924d-0175-79b89202-00003048events%40columbia.edu&returnlinkurl=/content/libraryweb/services/research-data-services/events&returnlinktext=Workshops%2C%20Training%20%26%20Events))
 * Patrick Smyth, [Research Computing Program](https://rcfoundations.research.columbia.edu/) Coordinator
 * Wei Yin, Research Support & Data Services Librarian II
 * [Consultations and Workshops](https://library.columbia.edu/services/research-data-services.html)
