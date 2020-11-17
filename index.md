@@ -246,7 +246,7 @@ what the average journey time is along the main road.
 * Researcher for others to generate knowledge
 * Provide data for others to visualize
 * The realm of, narrowly, webmapping (via [Leaflet](http://leafletjs.com) or
-  [Neatline](https://neatline.org/) for Omeka
+  [Neatline](https://neatline.org/) for Omeka)
 
 Note: Presentation, in contrast, is how the researcher assembles their work to
 allow it to generate knowledge for others.
